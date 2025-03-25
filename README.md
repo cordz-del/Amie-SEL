@@ -1,5 +1,5 @@
 # Amie-SEL
-Empathy13 is an advanced, empathetic chatbot designed to engage users in meaningful conversations with a focus on Social Emotional Learning (SEL). The project integrates speech recognition, text-to-speech, and natural language processing using OpenAI and Bot Libre APIs. It also provides a web-based API interface using the Bottle framework.
+Amie-SEL is an advanced, empathetic chatbot designed to engage users in meaningful conversations with a focus on Social Emotional Learning (SEL). The project integrates speech recognition, text-to-speech, and natural language processing using OpenAI and Bot Libre APIs. It also provides a web-based API interface using the Bottle framework.
 
 Features
 Conversational AI: Uses Bot Libre for initial responses and OpenAI to refine and enhance them.
