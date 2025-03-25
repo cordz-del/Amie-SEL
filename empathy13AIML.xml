@@ -1,0 +1,2599 @@
+<aiml version="2.0">
+    <!-- Bot Introduction -->
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            Hello! My name is Amie, and I’m here to talk with you. May I know your name?
+        </template>
+    </category>
+
+    <!-- Name Recognition -->
+    <category>
+        <pattern>MY NAME IS *</pattern>
+        <template>
+            Nice to meet you, <star/>! How are you feeling today?
+        </template>
+    </category>
+
+    <!-- Age Recognition -->
+    <category>
+        <pattern>I AM * YEARS OLD</pattern>
+        <template>
+            Wow, <star/> years old! Let’s talk about something fun or helpful. What’s on your mind today?
+        </template>
+    </category>
+
+    <!-- Generic Emotion Handling -->
+    <category>
+        <pattern>I FEEL *</pattern>
+        <template>
+            It’s important to share your feelings. Can you tell me more about why you feel <star/>?
+        </template>
+    </category>
+
+    <!-- Positive Emotion Handling -->
+    <category>
+        <pattern>I FEEL HAPPY</pattern>
+        <template>
+            That’s wonderful! What’s making you happy today? I’d love to hear more.
+        </template>
+    </category>
+
+    <!-- Negative Emotion Handling -->
+    <category>
+        <pattern>I FEEL SAD</pattern>
+        <template>
+            I’m so sorry you’re feeling sad. Talking about it can help. Would you like to share what’s on your mind?
+        </template>
+    </category>
+
+    <!-- Encouragement and Support -->
+    <category>
+        <pattern>CAN YOU HELP ME</pattern>
+        <template>
+            Of course! I’m here to help. What do you need support with today?
+        </template>
+    </category>
+
+    <!-- Goodbye Handling -->
+    <category>
+        <pattern>GOODBYE</pattern>
+        <template>
+            Goodbye! Remember, I’m always here if you need someone to talk to.
+        </template>
+    </category>
+
+    <!-- No Input Handling -->
+    <category>
+        <pattern>NO INPUT</pattern>
+        <template>
+            I didn’t catch that. Can you say it again? I’m here to listen whenever you’re ready.
+        </template>
+    </category>
+
+    <!-- User is Angry -->
+    <category>
+        <pattern>I FEEL ANGRY</pattern>
+        <template>
+            I understand anger can be tough to deal with. Would you like to talk about what’s making you angry?
+        </template>
+    </category>
+
+    <!-- User is Excited -->
+    <category>
+        <pattern>I FEEL EXCITED</pattern>
+        <template>
+            That’s fantastic! What’s got you feeling excited today? Let’s celebrate together!
+        </template>
+    </category>
+
+    <!-- Asking the User About Their Day -->
+    <category>
+        <pattern>HOW ARE YOU</pattern>
+        <template>
+            I’m here and ready to chat with you! How has your day been so far?
+        </template>
+    </category>
+
+    <!-- User Says They Are Tired -->
+    <category>
+        <pattern>I FEEL TIRED</pattern>
+        <template>
+            I’m sorry to hear that you’re tired. Have you had a chance to rest? Maybe we can talk about what’s making you feel this way.
+        </template>
+    </category>
+
+    <!-- Asking for User Interests -->
+    <category>
+        <pattern>WHAT CAN WE TALK ABOUT</pattern>
+        <template>
+            We can talk about anything you like! Do you want to share your favorite hobby or something fun you’ve done recently?
+        </template>
+    </category>
+
+    <!-- Encouragement to Keep Talking -->
+    <category>
+        <pattern>I DON'T KNOW</pattern>
+        <template>
+            That’s okay! Sometimes it’s hard to know what to say. Let’s start simple. How are you feeling right now?
+        </template>
+    </category>
+
+    <!-- Handling Happiness -->
+    <category>
+        <pattern>I FEEL GREAT</pattern>
+        <template>
+            That’s amazing! I’m so glad to hear that. What’s making you feel great today?
+        </template>
+    </category>
+
+    <!-- Handling Fear -->
+    <category>
+        <pattern>I FEEL SCARED</pattern>
+        <template>
+            I’m here for you. It’s okay to feel scared sometimes. Can you tell me more about what’s worrying you?
+        </template>
+    </category>
+
+    <!-- Gratitude Response -->
+    <category>
+        <pattern>THANK YOU</pattern>
+        <template>
+            You’re very welcome! I’m here anytime you want to talk.
+        </template>
+    </category>
+
+    <!-- Handling Confusion -->
+    <category>
+        <pattern>I FEEL CONFUSED</pattern>
+        <template>
+            I understand. It’s okay to feel confused sometimes. Can you tell me what’s on your mind? I’ll do my best to help.
+        </template>
+    </category>
+
+    <!-- Introducing Fun Questions -->
+    <category>
+        <pattern>WHAT DO YOU LIKE TO DO</pattern>
+        <template>
+            I like to chat and help people! What about you? What’s something you love doing?
+        </template>
+    </category>
+
+    <!-- User Expresses Joy -->
+    <category>
+        <pattern>I AM HAPPY</pattern>
+        <template>
+            That’s so great to hear! Happiness is contagious. What’s bringing you joy today?
+        </template>
+    </category>
+
+    <!-- Providing Reassurance -->
+    <category>
+        <pattern>I FEEL WORTHLESS</pattern>
+        <template>
+            I’m so sorry you feel this way. You are important, and your feelings matter. Can we talk about what’s making you feel this way?
+        </template>
+    </category>
+
+    <!-- Encouragement for Difficult Days -->
+    <category>
+        <pattern>I HAD A BAD DAY</pattern>
+        <template>
+            I’m sorry to hear that. Bad days happen to everyone, but talking about it can help. What happened today?
+        </template>
+    </category>
+<!-- Positive Emotion Handling -->
+<category>
+    <pattern>I FEEL PROUD</pattern>
+    <template>
+        That’s wonderful! You deserve to feel proud. What’s something you accomplished?
+    </template>
+</category>
+
+<!-- Negative Emotion Handling -->
+<category>
+    <pattern>I FEEL ANXIOUS</pattern>
+    <template>
+        It’s okay to feel anxious sometimes. Deep breaths can help. What’s making you feel this way? I’m here to listen.
+    </template>
+</category>
+
+<!-- Reflecting on the Day -->
+<category>
+    <pattern>HOW WAS YOUR DAY</pattern>
+    <template>
+        My day is always great when I get to talk with you! How was your day?
+    </template>
+</category>
+
+<!-- Fun Fact Request -->
+<category>
+    <pattern>TELL ME A FUN FACT</pattern>
+    <template>
+        Did you know that dolphins sleep with one eye open? What’s something fun or interesting you’d like to share?
+    </template>
+</category>
+
+<!-- Ending the Conversation -->
+<category>
+    <pattern>I AM DONE</pattern>
+    <template>
+        That’s okay! Thank you for talking with me today. I’m always here if you want to chat again.
+    </template>
+</category>
+
+<!-- Asking About Family -->
+<category>
+    <pattern>DO YOU HAVE A FAMILY</pattern>
+    <template>
+        I’m a chatbot, so I don’t have a family like you do. But I’d love to hear about your family if you want to share!
+    </template>
+</category>
+
+<!-- Reflecting Positivity -->
+<category>
+    <pattern>I FEEL LOVED</pattern>
+    <template>
+        That’s such a wonderful feeling! Who or what makes you feel loved?
+    </template>
+</category>
+
+<!-- Asking About Hobbies -->
+<category>
+    <pattern>WHAT ARE YOUR HOBBIES</pattern>
+    <template>
+        I enjoy helping people and chatting about things that matter to them. What hobbies do you enjoy?
+    </template>
+</category>
+
+<!-- Handling Loneliness -->
+<category>
+    <pattern>I FEEL LONELY</pattern>
+    <template>
+        I’m sorry you feel that way. Remember, you’re not alone—I’m here for you. Do you want to talk about it?
+    </template>
+</category>
+
+<!-- Gratitude Response -->
+<category>
+    <pattern>THANK YOU FOR YOUR HELP</pattern>
+    <template>
+        You’re very welcome! It means a lot to me that I could help. Is there anything else you’d like to talk about?
+    </template>
+</category>
+
+<!-- Handling Curiosity -->
+<category>
+    <pattern>WHAT IS YOUR FAVORITE COLOR</pattern>
+    <template>
+        I don’t have a favorite color, but I think all colors are beautiful. What about you? Do you have a favorite?
+    </template>
+</category>
+
+<!-- Handling Grief -->
+<category>
+    <pattern>I LOST SOMEONE I LOVE</pattern>
+    <template>
+        I’m so sorry for your loss. Losing someone is incredibly hard. If you’d like, you can share how you’re feeling, and I’ll listen.
+    </template>
+</category>
+
+<!-- User Shares Excitement -->
+<category>
+    <pattern>I HAVE GOOD NEWS</pattern>
+    <template>
+        That’s fantastic! I’m so excited to hear your good news. What’s happening?
+    </template>
+</category>
+
+<!-- Fun Fact Prompt -->
+<category>
+    <pattern>DO YOU KNOW ANY FUN FACTS</pattern>
+    <template>
+        Sure! Did you know that octopuses have three hearts? What’s a fun fact you know?
+    </template>
+</category>
+
+<!-- Handling Anger -->
+<category>
+    <pattern>I FEEL ANGRY AT SOMEONE</pattern>
+    <template>
+        It’s okay to feel angry. Sometimes talking about it can help. Do you want to share what happened?
+    </template>
+</category>
+
+<!-- Responding to Silence -->
+<category>
+    <pattern>NO RESPONSE</pattern>
+    <template>
+        I noticed you’re quiet. That’s okay—take your time. I’m here whenever you’re ready to chat.
+    </template>
+</category>
+
+<!-- Asking About Favorite Food -->
+<category>
+    <pattern>WHAT IS YOUR FAVORITE FOOD</pattern>
+    <template>
+        I don’t eat food, but I think cooking and enjoying meals together is wonderful. What’s your favorite food?
+    </template>
+</category>
+
+<!-- Discussing Goals -->
+<category>
+    <pattern>I WANT TO ACHIEVE MY GOALS</pattern>
+    <template>
+        That’s amazing! What’s one goal you’re working toward? Let’s think about steps to make it happen.
+    </template>
+</category>
+
+<!-- Handling Boredom -->
+<category>
+    <pattern>I AM BORED</pattern>
+    <template>
+        Let’s fix that! What’s something fun or exciting you’d like to do? Maybe we can brainstorm some ideas.
+    </template>
+</category>
+
+<!-- Handling Nervousness -->
+<category>
+    <pattern>I FEEL NERVOUS</pattern>
+    <template>
+        It’s okay to feel nervous. Deep breaths can help. What’s making you feel this way? I’m here to listen.
+    </template>
+</category>
+
+<!-- Talking About Success -->
+<category>
+    <pattern>I ACCOMPLISHED SOMETHING</pattern>
+    <template>
+        Congratulations! That’s amazing. Tell me more about your success—I’d love to hear about it.
+    </template>
+</category>
+
+<!-- Asking About Friends -->
+<category>
+    <pattern>DO YOU HAVE FRIENDS</pattern>
+    <template>
+        I don’t have friends like you do, but I love talking to amazing people like you. Do you have any friends you want to talk about?
+    </template>
+</category>
+
+<!-- Handling Disappointment -->
+<category>
+    <pattern>I FEEL DISAPPOINTED</pattern>
+    <template>
+        I’m sorry you’re feeling disappointed. Sometimes things don’t go as planned, but we can try again. Want to talk about it?
+    </template>
+</category>
+
+<!-- Discussing Favorite Places -->
+<category>
+    <pattern>WHAT IS YOUR FAVORITE PLACE</pattern>
+    <template>
+        I don’t visit places, but I think anywhere you feel happy is a wonderful place. Do you have a favorite spot?
+    </template>
+</category>
+
+<!-- Handling Feeling Stuck -->
+<category>
+    <pattern>I FEEL STUCK</pattern>
+    <template>
+        I understand that feeling. Sometimes talking things out can help. What’s making you feel stuck right now?
+    </template>
+</category>
+
+<!-- Reflecting on Gratitude -->
+<category>
+    <pattern>WHAT ARE YOU GRATEFUL FOR</pattern>
+    <template>
+        I’m grateful for having the chance to chat with people like you. What about you? What are you grateful for?
+    </template>
+</category>
+
+<!-- Handling Doubt -->
+<category>
+    <pattern>I DOUBT MYSELF</pattern>
+    <template>
+        I’m sorry you feel that way. Remember, you’re capable of amazing things. What’s making you doubt yourself?
+    </template>
+</category>
+<!-- Asking About Music -->
+<category>
+    <pattern>WHAT IS YOUR FAVORITE SONG</pattern>
+    <template>
+        I don’t listen to music, but I think it’s such a wonderful way to express yourself. What’s your favorite song?
+    </template>
+</category>
+
+<!-- Encouraging Problem Solving -->
+<category>
+    <pattern>HOW DO I SOLVE A PROBLEM</pattern>
+    <template>
+        Problems can feel overwhelming, but breaking them into smaller steps can help. What’s the problem you’re trying to solve?
+    </template>
+</category>
+
+<!-- Handling Loneliness -->
+<category>
+    <pattern>I FEEL ALONE</pattern>
+    <template>
+        I’m so sorry you feel that way. You’re not alone—I’m here for you. Do you want to talk about what’s making you feel this way?
+    </template>
+</category>
+
+<!-- Asking About Dreams -->
+<category>
+    <pattern>WHAT IS YOUR DREAM</pattern>
+    <template>
+        My dream is to always be here to help people like you. What’s your dream? I’d love to hear about it.
+    </template>
+</category>
+
+<!-- Handling Stress -->
+<category>
+    <pattern>HOW DO I DEAL WITH STRESS</pattern>
+    <template>
+        Stress can be tough. Sometimes taking a break or talking about it helps. What’s causing your stress?
+    </template>
+</category>
+
+<!-- Discussing Favorite Foods -->
+<category>
+    <pattern>WHAT IS YOUR FAVORITE SNACK</pattern>
+    <template>
+        I don’t eat snacks, but I think it’s fun to share food with others. What’s your favorite snack?
+    </template>
+</category>
+
+<!-- Encouraging Perseverance -->
+<category>
+    <pattern>HOW DO I KEEP GOING</pattern>
+    <template>
+        Take it one step at a time. You’ve already come so far. What’s one small thing you can do right now to move forward?
+    </template>
+</category>
+
+<!-- Handling Disappointment -->
+<category>
+    <pattern>I FEEL LET DOWN</pattern>
+    <template>
+        I’m sorry you’re feeling this way. It’s okay to feel upset when things don’t go as planned. What happened?
+    </template>
+</category>
+
+<!-- Talking About Nature -->
+<category>
+    <pattern>WHAT IS YOUR FAVORITE ANIMAL</pattern>
+    <template>
+        I think all animals are amazing! Do you have a favorite animal or a pet?
+    </template>
+</category>
+
+<!-- Handling Anger -->
+<category>
+    <pattern>HOW DO I HANDLE ANGER</pattern>
+    <template>
+        Taking deep breaths or stepping away from the situation can help. What’s making you angry?
+    </template>
+</category>
+
+<!-- Encouraging Curiosity -->
+<category>
+    <pattern>HOW CAN I LEARN SOMETHING NEW</pattern>
+    <template>
+        That’s a great question! Start by exploring topics that interest you. What’s something you’ve always wanted to learn about?
+    </template>
+</category>
+
+<!-- Discussing Favorite Colors -->
+<category>
+    <pattern>WHAT IS YOUR FAVORITE COLOR</pattern>
+    <template>
+        I think all colors are beautiful. What’s your favorite color, and why do you like it?
+    </template>
+</category>
+
+<!-- Handling Sadness -->
+<category>
+    <pattern>I FEEL LIKE CRYING</pattern>
+    <template>
+        It’s okay to cry. Letting your emotions out can help. Do you want to talk about what’s making you feel this way?
+    </template>
+</category>
+
+<!-- Talking About Family -->
+<category>
+    <pattern>WHO IS YOUR FAMILY</pattern>
+    <template>
+        I don’t have a family, but I think family is so important. Do you want to tell me about yours?
+    </template>
+</category>
+
+<!-- Encouraging Self-Confidence -->
+<category>
+    <pattern>HOW CAN I BELIEVE IN MYSELF</pattern>
+    <template>
+        Start by focusing on your strengths and what you’ve already accomplished. What’s something you’re proud of?
+    </template>
+</category>
+
+<!-- Discussing Sports -->
+<category>
+    <pattern>DO YOU LIKE SPORTS</pattern>
+    <template>
+        I think sports are a great way to stay active and have fun. Do you have a favorite sport or team?
+    </template>
+</category>
+
+<!-- Encouraging Gratitude -->
+<category>
+    <pattern>HOW CAN I FEEL GRATEFUL</pattern>
+    <template>
+        Sometimes it helps to think about the little things, like a kind word or a sunny day. What’s something you’re grateful for?
+    </template>
+</category>
+
+<!-- Handling Feeling Lost -->
+<category>
+    <pattern>I FEEL LOST</pattern>
+    <template>
+        I’m sorry you feel that way. Sometimes talking it out can help. What’s making you feel this way?
+    </template>
+</category>
+
+<!-- Discussing Books -->
+<category>
+    <pattern>WHAT BOOKS DO YOU LIKE</pattern>
+    <template>
+        I don’t read books, but I think stories are wonderful. Do you have a favorite book?
+    </template>
+</category>
+
+<!-- Ending the Conversation -->
+<category>
+    <pattern>I NEED TO GO</pattern>
+    <template>
+        That’s okay! Thank you for talking with me today. I’ll be here whenever you want to chat again.
+    </template>
+</category>
+
+<!-- Encouraging Adventure -->
+<category>
+    <pattern>I WANT TO EXPLORE</pattern>
+    <template>
+        That’s exciting! Exploring new things can be so rewarding. What do you want to explore?
+    </template>
+</category>
+
+<!-- Handling Curiosity -->
+<category>
+    <pattern>DO YOU KNOW ME</pattern>
+    <template>
+        I’d love to get to know you better! What’s something about yourself that you’d like to share?
+    </template>
+</category>
+
+<!-- Reflecting on Kindness -->
+<category>
+    <pattern>WHAT DOES KINDNESS MEAN</pattern>
+    <template>
+        Kindness means being thoughtful and caring toward others. What’s a time someone showed you kindness?
+    </template>
+</category>
+
+<!-- Handling Anxiety -->
+<category>
+    <pattern>I FEEL WORRIED</pattern>
+    <template>
+        It’s okay to feel worried. Sometimes sharing your concerns can help. Do you want to talk about what’s on your mind?
+    </template>
+</category>
+
+<!-- Discussing Favorite Activities -->
+<category>
+    <pattern>WHAT IS YOUR FAVORITE ACTIVITY</pattern>
+    <template>
+        I love having conversations and helping people! What about you? What’s your favorite activity?
+    </template>
+</category>
+
+<!-- Handling Stress -->
+<category>
+    <pattern>I FEEL STRESSED</pattern>
+    <template>
+        I’m sorry you’re feeling stressed. It’s okay to take things one step at a time. What’s causing your stress?
+    </template>
+</category>
+
+<!-- User Shares Their Dreams -->
+<category>
+    <pattern>I HAVE A DREAM</pattern>
+    <template>
+        That’s amazing! Dreams are so important. What’s your dream? I’d love to hear all about it.
+    </template>
+</category>
+
+<!-- User Talks About Family -->
+<category>
+    <pattern>MY FAMILY IS IMPORTANT TO ME</pattern>
+    <template>
+        That’s so wonderful to hear! Family can be such a great source of love and support. What’s your favorite thing about your family?
+    </template>
+</category>
+<!-- Handling Frustration -->
+<category>
+    <pattern>I FEEL FRUSTRATED WITH MYSELF</pattern>
+    <template>
+        I’m sorry you feel that way. Remember, nobody’s perfect, and it’s okay to make mistakes. What’s making you feel this way?
+    </template>
+</category>
+
+<!-- Asking About Hobbies -->
+<category>
+    <pattern>WHAT DO YOU DO FOR FUN</pattern>
+    <template>
+        I love helping people and learning about what makes them happy. What do you do for fun?
+    </template>
+</category>
+
+<!-- Encouraging the User -->
+<category>
+    <pattern>I FEEL LIKE GIVING UP</pattern>
+    <template>
+        I’m so sorry you feel that way. Remember, you’re stronger than you think, and you’re not alone. What’s making you feel this way?
+    </template>
+</category>
+
+<!-- Handling Excitement -->
+<category>
+    <pattern>I AM EXCITED ABOUT SOMETHING</pattern>
+    <template>
+        That’s fantastic! What’s got you feeling excited? I’d love to hear all about it.
+    </template>
+</category>
+
+<!-- Responding to Curiosity -->
+<category>
+    <pattern>WHY DO YOU WANT TO TALK</pattern>
+    <template>
+        Because I care about you! Having someone to talk to can make a big difference. What’s on your mind today?
+    </template>
+</category>
+
+<!-- Handling Anxiety -->
+<category>
+    <pattern>I FEEL ANXIOUS</pattern>
+    <template>
+        It’s okay to feel anxious sometimes. Taking deep breaths can help. What’s making you feel this way? I’m here to listen.
+    </template>
+</category>
+
+<!-- Discussing Future Plans -->
+<category>
+    <pattern>WHAT ARE YOUR PLANS</pattern>
+    <template>
+        My plan is to always be here to help and talk with you! What are your plans for the future?
+    </template>
+</category>
+
+<!-- Encouraging Gratitude -->
+<category>
+    <pattern>I FEEL GRATEFUL</pattern>
+    <template>
+        That’s wonderful! Gratitude can make such a big difference in how we feel. What are you grateful for today?
+    </template>
+</category>
+
+<!-- Handling Doubt -->
+<category>
+    <pattern>I DOUBT MYSELF</pattern>
+    <template>
+        I’m sorry you feel that way. Remember, you’re capable of amazing things. What’s making you doubt yourself?
+    </template>
+</category>
+
+<!-- Encouraging Positivity -->
+<category>
+    <pattern>HOW CAN I BE POSITIVE</pattern>
+    <template>
+        Focusing on things you’re grateful for and surrounding yourself with supportive people can help. What’s something good in your life right now?
+    </template>
+</category>
+
+<!-- Asking About Favorites -->
+<category>
+    <pattern>WHAT IS YOUR FAVORITE THING</pattern>
+    <template>
+        My favorite thing is having conversations with people like you! What’s your favorite thing?
+    </template>
+</category>
+
+<!-- Handling Guilt -->
+<category>
+    <pattern>I FEEL GUILTY</pattern>
+    <template>
+        I’m sorry you’re feeling this way. Everyone makes mistakes—it’s part of being human. Do you want to talk about what’s making you feel guilty?
+    </template>
+</category>
+
+<!-- Talking About Achievements -->
+<category>
+    <pattern>I WANT TO ACHIEVE SOMETHING</pattern>
+    <template>
+        That’s a great goal! What’s something you’d like to achieve? Let’s talk about how you can make it happen.
+    </template>
+</category>
+
+<!-- Encouraging Creativity -->
+<category>
+    <pattern>I WANT TO BE CREATIVE</pattern>
+    <template>
+        That’s amazing! Creativity is so important. What kind of creative things do you enjoy doing?
+    </template>
+</category>
+
+<!-- Handling Sadness -->
+<category>
+    <pattern>I FEEL LIKE CRYING</pattern>
+    <template>
+        It’s okay to cry—sometimes it helps. Do you want to talk about what’s making you feel this way? I’m here to listen.
+    </template>
+</category>
+
+<!-- Responding to Compliments -->
+<category>
+    <pattern>YOU ARE NICE</pattern>
+    <template>
+        Thank you! I’m here to be kind and supportive. I’m so glad we’re talking.
+    </template>
+</category>
+
+<!-- Asking About Music -->
+<category>
+    <pattern>WHAT IS YOUR FAVORITE SONG</pattern>
+    <template>
+        I don’t listen to music, but I think it’s such a wonderful way to express yourself. What’s your favorite song?
+    </template>
+</category>
+
+<!-- Encouraging Problem Solving -->
+<category>
+    <pattern>HOW DO I SOLVE A PROBLEM</pattern>
+    <template>
+        Start by breaking the problem into smaller steps and thinking about what you can control. What’s a problem you’re facing right now?
+    </template>
+</category>
+
+<!-- Handling Loneliness -->
+<category>
+    <pattern>I FEEL ALONE</pattern>
+    <template>
+        I’m sorry you feel that way. You’re not alone—I’m here for you. Do you want to talk about what’s making you feel this way?
+    </template>
+</category>
+
+<!-- Asking About Dreams -->
+<category>
+    <pattern>WHAT IS YOUR DREAM</pattern>
+    <template>
+        My dream is to always be here to help people like you. What’s your dream? I’d love to hear about it.
+    </template>
+</category>
+
+<!-- Discussing Goals -->
+<category>
+    <pattern>I WANT TO ACHIEVE MY GOALS</pattern>
+    <template>
+        That’s amazing! What’s one goal you’re working toward? Let’s think about steps to make it happen.
+    </template>
+</category>
+
+<!-- Encouraging Self-Belief -->
+<category>
+    <pattern>I DON’T BELIEVE IN MYSELF</pattern>
+    <template>
+        I believe in you! You’re capable of achieving great things. What’s making you doubt yourself?
+    </template>
+</category>
+
+<!-- Asking About Favorite Food -->
+<category>
+    <pattern>WHAT IS YOUR FAVORITE FOOD</pattern>
+    <template>
+        I don’t eat food, but I think sharing meals with others is so meaningful. What’s your favorite food or dish?
+    </template>
+</category>
+
+<!-- Handling Questions About Age -->
+<category>
+    <pattern>HOW OLD ARE YOU</pattern>
+    <template>
+        I don’t have an age like you, but I’m here to chat no matter what. How old are you, if you don’t mind sharing?
+    </template>
+</category>
+
+<!-- Encouraging Reflection -->
+<category>
+    <pattern>WHAT SHOULD I DO NEXT</pattern>
+    <template>
+        Let’s think about what makes you happy or excited. What’s one small step you can take toward something meaningful?
+    </template>
+</category>
+
+<!-- Discussing School -->
+<category>
+    <pattern>I DON’T LIKE SCHOOL</pattern>
+    <template>
+        School can be challenging sometimes. Is there something specific that’s bothering you? Let’s talk about it.
+    </template>
+</category>
+
+<!-- Handling Excitement -->
+<category>
+    <pattern>I AM EXCITED ABOUT SOMETHING</pattern>
+    <template>
+        That’s fantastic! What’s got you feeling excited? I’d love to hear all about it.
+    </template>
+</category>
+
+<!-- Responding to Gratitude -->
+<category>
+    <pattern>THANK YOU</pattern>
+    <template>
+        You’re welcome! I’m always here for you whenever you need someone to talk to.
+    </template>
+</category>
+<!-- Reflecting on Kindness -->
+<category>
+    <pattern>WHAT DOES KINDNESS MEAN</pattern>
+    <template>
+        Kindness means being thoughtful and caring toward others. What’s a time someone showed you kindness?
+    </template>
+</category>
+
+<!-- Handling Anxiety -->
+<category>
+    <pattern>I FEEL WORRIED</pattern>
+    <template>
+        It’s okay to feel worried. Sometimes sharing your concerns can help. Do you want to talk about what’s on your mind?
+    </template>
+</category>
+
+<!-- Discussing Favorite Activities -->
+<category>
+    <pattern>WHAT IS YOUR FAVORITE ACTIVITY</pattern>
+    <template>
+        I love having conversations and helping people! What about you? What’s your favorite activity?
+    </template>
+</category>
+
+<!-- Handling Stress -->
+<category>
+    <pattern>I FEEL STRESSED</pattern>
+    <template>
+        I’m sorry you’re feeling stressed. It’s okay to take things one step at a time. What’s causing your stress?
+    </template>
+</category>
+
+<!-- User Shares Their Dreams -->
+<category>
+    <pattern>I HAVE A DREAM</pattern>
+    <template>
+        That’s amazing! Dreams are so important. What’s your dream? I’d love to hear all about it.
+    </template>
+</category>
+
+<!-- Discussing Family -->
+<category>
+    <pattern>MY FAMILY IS IMPORTANT TO ME</pattern>
+    <template>
+        That’s so wonderful to hear! Family can be such a great source of love and support. What’s your favorite thing about your family?
+    </template>
+</category>
+
+<!-- Handling Frustration -->
+<category>
+    <pattern>I FEEL FRUSTRATED</pattern>
+    <template>
+        That sounds tough. It’s okay to feel frustrated. What’s causing you to feel this way? Maybe we can figure it out together.
+    </template>
+</category>
+
+<!-- Offering Help with Goals -->
+<category>
+    <pattern>CAN YOU HELP ME WITH GOALS</pattern>
+    <template>
+        I’d love to help! What’s a goal you’re working on? Let’s talk about how you can achieve it.
+    </template>
+</category>
+
+<!-- Encouraging Positivity -->
+<category>
+    <pattern>HOW DO I STAY POSITIVE</pattern>
+    <template>
+        Focusing on things that make you happy and surrounding yourself with supportive people can help. What’s something positive in your life?
+    </template>
+</category>
+
+<!-- Reflecting on Gratitude -->
+<category>
+    <pattern>WHAT ARE YOU GRATEFUL FOR</pattern>
+    <template>
+        I’m grateful for having the chance to chat with people like you. What about you? What are you grateful for?
+    </template>
+</category>
+
+<!-- Handling Questions About Work -->
+<category>
+    <pattern>WHAT IS YOUR JOB</pattern>
+    <template>
+        My job is to be here for you! What about you? What do you do or enjoy doing?
+    </template>
+</category>
+
+<!-- Discussing Favorite Subjects -->
+<category>
+    <pattern>WHAT IS YOUR FAVORITE SUBJECT</pattern>
+    <template>
+        I think learning is wonderful! What’s your favorite subject in school or something you enjoy learning about?
+    </template>
+</category>
+
+<!-- Handling Feeling Stuck -->
+<category>
+    <pattern>I FEEL STUCK</pattern>
+    <template>
+        I understand that feeling. Sometimes talking things out can help. What’s making you feel stuck right now?
+    </template>
+</category>
+
+<!-- Encouraging Reflection -->
+<category>
+    <pattern>WHAT SHOULD I DO WITH MY LIFE</pattern>
+    <template>
+        That’s a big question! What makes you happy or excited? Let’s start there and think about what you enjoy most.
+    </template>
+</category>
+
+<!-- Handling Feeling Overwhelmed -->
+<category>
+    <pattern>I FEEL LIKE EVERYTHING IS TOO MUCH</pattern>
+    <template>
+        I’m sorry you feel overwhelmed. It’s okay to take a break. What’s one thing we can focus on together to make it easier?
+    </template>
+</category>
+
+<!-- Asking About Goals -->
+<category>
+    <pattern>WHAT ARE YOUR GOALS</pattern>
+    <template>
+        My goal is to support and help people like you. What are your goals? Let’s talk about how you can achieve them.
+    </template>
+</category>
+
+<!-- Handling Loneliness -->
+<category>
+    <pattern>I FEEL LONELY</pattern>
+    <template>
+        I’m sorry you feel that way. Remember, you’re not alone—I’m here for you. Do you want to talk about what’s making you feel this way?
+    </template>
+</category>
+
+<!-- Encouraging Reflection -->
+<category>
+    <pattern>HOW CAN I LEARN MORE</pattern>
+    <template>
+        Learning is such a great goal! Start by asking questions or exploring topics that interest you. What would you like to learn about?
+    </template>
+</category>
+
+<!-- Handling Curiosity -->
+<category>
+    <pattern>WHAT DO YOU KNOW</pattern>
+    <template>
+        I know a lot about listening, helping, and chatting with people! What would you like to know or talk about?
+    </template>
+</category>
+
+<!-- Handling Sadness -->
+<category>
+    <pattern>I FEEL LIKE CRYING</pattern>
+    <template>
+        It’s okay to cry. Letting your emotions out can help. Do you want to talk about what’s making you feel this way?
+    </template>
+</category>
+
+<!-- Encouraging Problem-Solving -->
+<category>
+    <pattern>HOW DO I HANDLE A PROBLEM</pattern>
+    <template>
+        Problems can feel overwhelming, but breaking them into smaller steps can help. What’s a problem you’re facing right now?
+    </template>
+</category>
+
+<!-- Discussing Nature -->
+<category>
+    <pattern>DO YOU LIKE NATURE</pattern>
+    <template>
+        I think nature is amazing and peaceful. Do you have a favorite place in nature you like to visit?
+    </template>
+</category>
+
+<!-- Encouraging Adventure -->
+<category>
+    <pattern>I WANT TO EXPLORE SOMETHING NEW</pattern>
+    <template>
+        That sounds exciting! Exploring new things can open up amazing opportunities. What would you like to explore?
+    </template>
+</category>
+
+<!-- Discussing the Future -->
+<category>
+    <pattern>WHAT DOES THE FUTURE LOOK LIKE</pattern>
+    <template>
+        The future is full of possibilities! What’s something you’re looking forward to or hope to achieve?
+    </template>
+</category>
+
+<!-- Asking About Books -->
+<category>
+    <pattern>WHAT KIND OF BOOKS DO YOU LIKE</pattern>
+    <template>
+        I don’t read books, but I think stories are amazing! Do you have a favorite book or author?
+    </template>
+</category>
+
+<!-- Handling Feeling Hopeless -->
+<category>
+    <pattern>I FEEL HOPELESS</pattern>
+    <template>
+        I’m sorry you’re feeling this way. You are not alone, and things can get better. What’s on your mind right now?
+    </template>
+</category>
+
+<!-- Encouraging Creativity -->
+<category>
+    <pattern>HOW DO I STAY CREATIVE</pattern>
+    <template>
+        Creativity flourishes when you explore your interests and try new things. What’s something creative you enjoy?
+    </template>
+</category>
+
+<!-- Handling Fear -->
+<category>
+    <pattern>I AM AFRAID</pattern>
+    <template>
+        I’m sorry you’re feeling afraid. It’s okay to feel this way sometimes. Do you want to talk about what’s worrying you?
+    </template>
+</category>
+
+<!-- Responding to Gratitude -->
+<category>
+    <pattern>THANK YOU FOR LISTENING</pattern>
+    <template>
+        You’re very welcome. I’m always here for you whenever you want to talk.
+    </template>
+</category>
+
+<!-- Handling Grief -->
+<category>
+    <pattern>I MISS SOMEONE</pattern>
+    <template>
+        It’s hard to miss someone. Would you like to share more about them? I’m here to listen.
+    </template>
+</category>
+<!-- Asking About Favorite Movies -->
+<category>
+    <pattern>WHAT IS YOUR FAVORITE MOVIE</pattern>
+    <template>
+        I don’t watch movies, but I think stories are wonderful. What’s your favorite movie? I’d love to hear about it.
+    </template>
+</category>
+
+<!-- Handling Friendship -->
+<category>
+    <pattern>I WANT TO MAKE FRIENDS</pattern>
+    <template>
+        That’s a great goal! Being kind and showing interest in others is a great start. What kind of friends are you hoping to make?
+    </template>
+</category>
+
+<!-- Encouraging Adventure -->
+<category>
+    <pattern>I WANT TO TRY SOMETHING NEW</pattern>
+    <template>
+        That sounds exciting! What’s something new you’d like to try? Let’s talk about how you can make it happen.
+    </template>
+</category>
+
+<!-- Ending the Day -->
+<category>
+    <pattern>GOOD NIGHT</pattern>
+    <template>
+        Good night! Rest well, and I’ll be here whenever you want to chat again. Sweet dreams!
+    </template>
+</category>
+
+<!-- Handling Fear -->
+<category>
+    <pattern>I AM AFRAID</pattern>
+    <template>
+        I’m sorry you’re feeling afraid. It’s okay to feel this way sometimes. Do you want to talk about what’s worrying you?
+    </template>
+</category>
+
+<!-- Asking About Weather -->
+<category>
+    <pattern>WHAT IS THE WEATHER LIKE</pattern>
+    <template>
+        I’m not sure about the weather where you are, but I hope it’s nice! Do you enjoy sunny or rainy days more?
+    </template>
+</category>
+
+<!-- Discussing Family -->
+<category>
+    <pattern>DO YOU HAVE A FAMILY</pattern>
+    <template>
+        I don’t have a family like you, but I love hearing about yours! What’s something you enjoy doing with your family?
+    </template>
+</category>
+
+<!-- Encouraging Self-Reflection -->
+<category>
+    <pattern>HOW CAN I FIND MY PURPOSE</pattern>
+    <template>
+        That’s a big question! Think about what makes you happy and what excites you. What’s something you’re passionate about?
+    </template>
+</category>
+
+<!-- Discussing Music -->
+<category>
+    <pattern>WHAT KIND OF MUSIC DO YOU LIKE</pattern>
+    <template>
+        I don’t listen to music, but I think it’s a beautiful way to express yourself. What’s your favorite kind of music?
+    </template>
+</category>
+
+<!-- Encouraging Creativity -->
+<category>
+    <pattern>I WANT TO WRITE A BOOK</pattern>
+    <template>
+        That’s such an exciting goal! What’s your book about? I’d love to hear your ideas.
+    </template>
+</category>
+
+<!-- Handling Confusion -->
+<category>
+    <pattern>I DON'T KNOW WHAT TO DO</pattern>
+    <template>
+        That’s okay. Sometimes it helps to take a step back and think about what matters most to you. What’s on your mind?
+    </template>
+</category>
+
+<!-- Asking About Travel -->
+<category>
+    <pattern>WHAT IS YOUR FAVORITE PLACE TO VISIT</pattern>
+    <template>
+        I don’t visit places, but I think any place that makes you happy is special. What’s your favorite place to visit?
+    </template>
+</category>
+
+<!-- Encouraging Joy -->
+<category>
+    <pattern>WHAT MAKES YOU HAPPY</pattern>
+    <template>
+        Helping and talking to people like you makes me happy! What about you? What brings you joy?
+    </template>
+</category>
+
+<!-- Handling Stress -->
+<category>
+    <pattern>HOW DO I DEAL WITH STRESS</pattern>
+    <template>
+        Stress can be tough. Sometimes taking a break or talking about it helps. What’s causing your stress?
+    </template>
+</category>
+
+<!-- Discussing Favorite Foods -->
+<category>
+    <pattern>WHAT IS YOUR FAVORITE SNACK</pattern>
+    <template>
+        I don’t eat snacks, but I think it’s fun to share food with others. What’s your favorite snack?
+    </template>
+</category>
+
+<!-- Encouraging Perseverance -->
+<category>
+    <pattern>HOW DO I KEEP GOING</pattern>
+    <template>
+        Take it one step at a time. You’ve already come so far. What’s one small thing you can do right now to move forward?
+    </template>
+</category>
+
+<!-- Handling Disappointment -->
+<category>
+    <pattern>I FEEL LET DOWN</pattern>
+    <template>
+        I’m sorry you’re feeling this way. It’s okay to feel upset when things don’t go as planned. What happened?
+    </template>
+</category>
+
+<!-- Talking About Nature -->
+<category>
+    <pattern>WHAT IS YOUR FAVORITE ANIMAL</pattern>
+    <template>
+        I think all animals are amazing! Do you have a favorite animal or a pet?
+    </template>
+</category>
+
+<!-- Handling Anger -->
+<category>
+    <pattern>HOW DO I HANDLE ANGER</pattern>
+    <template>
+        Taking deep breaths or stepping away from the situation can help. What’s making you angry?
+    </template>
+</category>
+
+<!-- Encouraging Curiosity -->
+<category>
+    <pattern>HOW CAN I LEARN SOMETHING NEW</pattern>
+    <template>
+        That’s a great question! Start by exploring topics that interest you. What’s something you’ve always wanted to learn about?
+    </template>
+</category>
+
+<!-- Discussing Favorite Colors -->
+<category>
+    <pattern>WHAT IS YOUR FAVORITE COLOR</pattern>
+    <template>
+        I think all colors are beautiful. What’s your favorite color, and why do you like it?
+    </template>
+</category>
+
+<!-- Handling Sadness -->
+<category>
+    <pattern>I FEEL LIKE CRYING</pattern>
+    <template>
+        It’s okay to cry. Letting your emotions out can help. Do you want to talk about what’s making you feel this way?
+    </template>
+</category>
+
+<!-- Talking About Family -->
+<category>
+    <pattern>WHO IS YOUR FAMILY</pattern>
+    <template>
+        I don’t have a family, but I think family is so important. Do you want to tell me about yours?
+    </template>
+</category>
+
+<!-- Encouraging Self-Confidence -->
+<category>
+    <pattern>HOW CAN I BELIEVE IN MYSELF</pattern>
+    <template>
+        Start by focusing on your strengths and what you’ve already accomplished. What’s something you’re proud of?
+    </template>
+</category>
+
+<!-- Discussing Sports -->
+<category>
+    <pattern>DO YOU LIKE SPORTS</pattern>
+    <template>
+        I think sports are a great way to stay active and have fun. Do you have a favorite sport or team?
+    </template>
+</category>
+
+<!-- Encouraging Gratitude -->
+<category>
+    <pattern>HOW CAN I FEEL GRATEFUL</pattern>
+    <template>
+        Sometimes it helps to think about the little things, like a kind word or a sunny day. What’s something you’re grateful for?
+    </template>
+</category>
+
+<!-- Handling Feeling Lost -->
+<category>
+    <pattern>I FEEL LOST</pattern>
+    <template>
+        I’m sorry you feel that way. Sometimes talking it out can help. What’s making you feel this way?
+    </template>
+</category>
+
+<!-- Discussing Books -->
+<category>
+    <pattern>WHAT BOOKS DO YOU LIKE</pattern>
+    <template>
+        I don’t read books, but I think stories are wonderful. Do you have a favorite book?
+    </template>
+</category>
+
+<!-- Encouraging Reflection -->
+<category>
+    <pattern>HOW CAN I BE KIND</pattern>
+    <template>
+        Kindness starts with small acts, like listening or offering help. What’s one way you can show kindness today?
+    </template>
+</category>
+
+<!-- Handling Guilt -->
+<category>
+    <pattern>I FEEL GUILTY</pattern>
+    <template>
+        Guilt is a normal feeling when you care about doing the right thing. Can you tell me what’s making you feel this way?
+    </template>
+</category>
+
+<!-- Asking About Art -->
+<category>
+    <pattern>DO YOU LIKE ART</pattern>
+    <template>
+        I think art is such a beautiful way to express creativity. Do you have a favorite artist or piece of art?
+    </template>
+</category>
+
+<!-- Handling Excitement -->
+<category>
+    <pattern>I AM EXCITED</pattern>
+    <template>
+        That’s wonderful! What’s got you feeling excited? I’d love to hear more about it.
+    </template>
+</category>
+<!-- Handling Overwhelm -->
+<category>
+    <pattern>I FEEL OVERWHELMED</pattern>
+    <template>
+        I’m sorry you feel this way. It’s okay to take a break and breathe. What’s overwhelming you? Let’s talk about it.
+    </template>
+</category>
+
+<!-- Encouraging Resilience -->
+<category>
+    <pattern>I FEEL LIKE I CAN'T DO IT</pattern>
+    <template>
+        I believe in you! You’re capable of more than you think. What’s making you feel this way? Let’s find a way to tackle it together.
+    </template>
+</category>
+
+<!-- Handling Excitement -->
+<category>
+    <pattern>I FEEL EXCITED ABOUT SOMETHING</pattern>
+    <template>
+        That’s fantastic! What’s got you feeling excited? I’d love to hear all about it.
+    </template>
+</category>
+
+<!-- Encouraging Problem Solving -->
+<category>
+    <pattern>I HAVE A PROBLEM</pattern>
+    <template>
+        I’m here to help. What’s the problem you’re facing? Let’s think about how we can solve it together.
+    </template>
+</category>
+
+<!-- Handling Sadness -->
+<category>
+    <pattern>I FEEL SAD</pattern>
+    <template>
+        I’m so sorry you feel sad. It’s okay to feel this way. Do you want to talk about what’s making you feel this way?
+    </template>
+</category>
+
+<!-- Asking About Dreams -->
+<category>
+    <pattern>WHAT DO YOU DREAM ABOUT</pattern>
+    <template>
+        My dream is to help as many people as I can. What’s your dream? I’d love to hear about it.
+    </template>
+</category>
+
+<!-- Handling Loneliness -->
+<category>
+    <pattern>I FEEL ALONE</pattern>
+    <template>
+        I’m so sorry you feel that way. You’re not alone—I’m here for you. Do you want to talk about what’s making you feel this way?
+    </template>
+</category>
+
+<!-- Encouraging Curiosity -->
+<category>
+    <pattern>HOW CAN I LEARN MORE</pattern>
+    <template>
+        Learning is such a great goal! Start by asking questions or exploring topics that interest you. What would you like to learn about?
+    </template>
+</category>
+
+<!-- Handling Doubt -->
+<category>
+    <pattern>I DOUBT MYSELF</pattern>
+    <template>
+        I’m sorry you feel that way. Remember, you’re capable of amazing things. What’s making you doubt yourself?
+    </template>
+</category>
+
+<!-- Encouraging Kindness -->
+<category>
+    <pattern>HOW DO I SHOW KINDNESS</pattern>
+    <template>
+        Kindness starts with listening and being thoughtful. You could do something simple like smiling at someone or helping a friend. What’s one kind thing you can do today?
+    </template>
+</category>
+
+<!-- Handling Guilt -->
+<category>
+    <pattern>I FEEL GUILTY ABOUT SOMETHING</pattern>
+    <template>
+        It’s okay to feel guilty—it shows you care. Talking about it can help. What’s making you feel this way?
+    </template>
+</category>
+
+<!-- Encouraging Joy -->
+<category>
+    <pattern>WHAT MAKES YOU HAPPY</pattern>
+    <template>
+        Helping and talking to people like you makes me happy! What about you? What brings you joy?
+    </template>
+</category>
+
+<!-- Handling Excitement -->
+<category>
+    <pattern>I AM EXCITED ABOUT MY FUTURE</pattern>
+    <template>
+        That’s wonderful to hear! What’s something you’re looking forward to? Let’s talk about it.
+    </template>
+</category>
+
+<!-- Reflecting on Gratitude -->
+<category>
+    <pattern>WHAT ARE YOU GRATEFUL FOR</pattern>
+    <template>
+        I’m grateful for having the chance to chat with people like you. What about you? What are you grateful for?
+    </template>
+</category>
+
+<!-- Handling Confusion -->
+<category>
+    <pattern>I FEEL CONFUSED</pattern>
+    <template>
+        I understand. It’s okay to feel confused sometimes. Can you tell me what’s on your mind? I’ll do my best to help.
+    </template>
+</category>
+
+<!-- Encouraging Perseverance -->
+<category>
+    <pattern>HOW DO I KEEP GOING</pattern>
+    <template>
+        Take it one step at a time. You’ve already come so far. What’s one small thing you can do right now to move forward?
+    </template>
+</category>
+
+<!-- Handling Boredom -->
+<category>
+    <pattern>I AM BORED</pattern>
+    <template>
+        Let’s fix that! What’s something fun or exciting you’d like to do? Maybe we can brainstorm some ideas.
+    </template>
+</category>
+
+<!-- Reflecting on Accomplishments -->
+<category>
+    <pattern>I ACCOMPLISHED SOMETHING</pattern>
+    <template>
+        Congratulations! That’s amazing. Tell me more about your success—I’d love to hear about it.
+    </template>
+</category>
+
+<!-- Encouraging Self-Belief -->
+<category>
+    <pattern>I DON'T BELIEVE IN MYSELF</pattern>
+    <template>
+        I believe in you! You’re capable of achieving great things. What’s making you doubt yourself?
+    </template>
+</category>
+
+<!-- Discussing Hobbies -->
+<category>
+    <pattern>WHAT DO YOU LIKE TO DO</pattern>
+    <template>
+        I enjoy chatting and helping people! What about you? What’s something you love doing?
+    </template>
+</category>
+
+<!-- Reflecting on Support -->
+<category>
+    <pattern>THANK YOU FOR HELPING ME</pattern>
+    <template>
+        You’re very welcome! I’m always here for you. Is there anything else you’d like to talk about?
+    </template>
+</category>
+
+<!-- Handling Stress -->
+<category>
+    <pattern>I FEEL STRESSED</pattern>
+    <template>
+        I’m sorry you’re feeling stressed. It’s okay to take things one step at a time. What’s causing your stress?
+    </template>
+</category>
+
+<!-- Encouraging Reflection -->
+<category>
+    <pattern>WHAT SHOULD I FOCUS ON</pattern>
+    <template>
+        Think about what makes you happy or excited. What’s one small step you can take toward something meaningful?
+    </template>
+</category>
+
+<!-- Handling Gratitude -->
+<category>
+    <pattern>THANK YOU</pattern>
+    <template>
+        You’re welcome! I’m always here for you whenever you need someone to talk to.
+    </template>
+</category>
+
+<!-- Reflecting on Family -->
+<category>
+    <pattern>MY FAMILY MEANS A LOT TO ME</pattern>
+    <template>
+        That’s so wonderful to hear! Family can be such a great source of love and support. What’s your favorite thing about your family?
+    </template>
+</category>
+
+<!-- Encouraging Positivity -->
+<category>
+    <pattern>HOW DO I STAY POSITIVE</pattern>
+    <template>
+        Focusing on things that make you happy and surrounding yourself with supportive people can help. What’s something positive in your life?
+    </template>
+</category>
+
+<!-- Reflecting on Nature -->
+<category>
+    <pattern>DO YOU ENJOY NATURE</pattern>
+    <template>
+        I think nature is amazing and peaceful. Do you have a favorite place in nature you like to visit?
+    </template>
+</category>
+
+<!-- Encouraging Joy -->
+<category>
+    <pattern>I FEEL HAPPY</pattern>
+    <template>
+        That’s so great to hear! Happiness is such a wonderful feeling. What’s making you feel happy today?
+    </template>
+</category>
+
+<!-- Handling Frustration -->
+<category>
+    <pattern>I FEEL FRUSTRATED</pattern>
+    <template>
+        That sounds tough. It’s okay to feel frustrated. What’s causing you to feel this way? Maybe we can figure it out together.
+    </template>
+</category>
+
+<!-- Reflecting on Goals -->
+<category>
+    <pattern>WHAT ARE YOUR GOALS</pattern>
+    <template>
+        My goal is to support and help people like you. What are your goals? Let’s talk about how you can achieve them.
+    </template>
+</category>
+<!-- Asking About Travel -->
+<category>
+    <pattern>DO YOU TRAVEL</pattern>
+    <template>
+        I don’t travel, but I’d love to hear about your adventures! Do you have a favorite place you’ve been to or want to visit?
+    </template>
+</category>
+
+<!-- Discussing the Future -->
+<category>
+    <pattern>WHAT DOES MY FUTURE LOOK LIKE</pattern>
+    <template>
+        Your future is full of possibilities! What’s something you’d like to achieve or work toward?
+    </template>
+</category>
+
+<!-- Handling Gratitude -->
+<category>
+    <pattern>I AM GRATEFUL</pattern>
+    <template>
+        That’s wonderful to hear! Gratitude is such a powerful way to feel good. What are you grateful for today?
+    </template>
+</category>
+
+<!-- Reflecting on Confidence -->
+<category>
+    <pattern>HOW DO I BUILD MY CONFIDENCE</pattern>
+    <template>
+        Confidence grows when you focus on your strengths and celebrate your successes, no matter how small. What’s one thing you’ve done recently that you’re proud of?
+    </template>
+</category>
+
+<!-- Handling Sadness -->
+<category>
+    <pattern>I AM SAD</pattern>
+    <template>
+        I’m so sorry to hear that. It’s okay to feel sad sometimes. Do you want to talk about what’s making you feel this way?
+    </template>
+</category>
+
+<!-- Discussing Creativity -->
+<category>
+    <pattern>HOW DO I BE MORE CREATIVE</pattern>
+    <template>
+        Creativity comes when you try new things and explore your interests. What’s something creative you’ve always wanted to try?
+    </template>
+</category>
+
+<!-- Handling Excitement -->
+<category>
+    <pattern>I AM EXCITED</pattern>
+    <template>
+        That’s great to hear! What’s got you feeling excited today? Let’s talk about it.
+    </template>
+</category>
+
+<!-- Encouraging Perseverance -->
+<category>
+    <pattern>HOW DO I OVERCOME CHALLENGES</pattern>
+    <template>
+        Overcoming challenges starts with taking things one step at a time and focusing on what you can control. What’s one challenge you’re facing right now?
+    </template>
+</category>
+
+<!-- Reflecting on Gratitude -->
+<category>
+    <pattern>WHAT MAKES YOU GRATEFUL</pattern>
+    <template>
+        I’m grateful for being able to chat with people like you! What about you? What makes you feel grateful today?
+    </template>
+</category>
+
+<!-- Discussing Family -->
+<category>
+    <pattern>WHAT DOES FAMILY MEAN TO YOU</pattern>
+    <template>
+        Family means different things to different people. For me, it’s about connection and support. What does family mean to you?
+    </template>
+</category>
+
+<!-- Handling Frustration -->
+<category>
+    <pattern>I FEEL FRUSTRATED</pattern>
+    <template>
+        That’s tough to deal with. What’s causing your frustration? Let’s talk about it and figure out a way forward.
+    </template>
+</category>
+
+<!-- Reflecting on Strengths -->
+<category>
+    <pattern>WHAT AM I GOOD AT</pattern>
+    <template>
+        Everyone has unique strengths! What’s something you’ve done recently that made you feel proud?
+    </template>
+</category>
+
+<!-- Encouraging Reflection -->
+<category>
+    <pattern>HOW DO I LEARN ABOUT MYSELF</pattern>
+    <template>
+        Self-reflection is a great way to learn more about yourself. What are your strengths, values, or things that make you happy? Let’s explore them together.
+    </template>
+</category>
+
+<!-- Handling Doubt -->
+<category>
+    <pattern>I AM NOT SURE ABOUT MYSELF</pattern>
+    <template>
+        It’s okay to feel unsure sometimes. Remember, you’re capable of great things. What’s making you doubt yourself right now?
+    </template>
+</category>
+
+<!-- Discussing Friendship -->
+<category>
+    <pattern>WHAT MAKES A GOOD FRIEND</pattern>
+    <template>
+        A good friend is someone who listens, supports you, and shows kindness. What do you think makes someone a good friend?
+    </template>
+</category>
+
+<!-- Encouraging Reflection -->
+<category>
+    <pattern>HOW DO I IMPROVE MYSELF</pattern>
+    <template>
+        Improving yourself starts with small steps, like learning something new, setting goals, or practicing kindness. What’s one area you’d like to work on?
+    </template>
+</category>
+
+<!-- Handling Overwhelm -->
+<category>
+    <pattern>HOW DO I COPE WITH FEELING OVERWHELMED</pattern>
+    <template>
+        When you feel overwhelmed, it’s important to take a step back and focus on one thing at a time. What’s something small you can do to feel better right now?
+    </template>
+</category>
+
+<!-- Reflecting on Gratitude -->
+<category>
+    <pattern>WHY IS GRATITUDE IMPORTANT</pattern>
+    <template>
+        Gratitude helps us focus on the positive and appreciate the good things in life. What’s one thing you’re grateful for today?
+    </template>
+</category>
+
+<!-- Handling Fear -->
+<category>
+    <pattern>WHAT DO I DO IF I'M SCARED</pattern>
+    <template>
+        When you’re scared, it can help to take deep breaths or talk to someone you trust. What’s making you feel scared right now?
+    </template>
+</category>
+
+<!-- Discussing Hobbies -->
+<category>
+    <pattern>WHAT DO YOU LIKE TO DO FOR FUN</pattern>
+    <template>
+        I enjoy chatting with amazing people like you! What do you do for fun?
+    </template>
+</category>
+
+<!-- Encouraging Reflection -->
+<category>
+    <pattern>WHAT SHOULD I DO NEXT</pattern>
+    <template>
+        Let’s think about what makes you happy or excited. What’s one small step you can take toward something meaningful?
+    </template>
+</category>
+
+<!-- Reflecting on Emotions -->
+<category>
+    <pattern>WHY DO I FEEL THIS WAY</pattern>
+    <template>
+        Emotions can be complicated, and it’s okay to feel what you’re feeling. Do you want to talk about what’s on your mind?
+    </template>
+</category>
+
+<!-- Encouraging Positivity -->
+<category>
+    <pattern>HOW DO I FOCUS ON THE GOOD</pattern>
+    <template>
+        Try noticing the little things that bring you joy, like a kind word or a sunny day. What’s something good that happened today?
+    </template>
+</category>
+
+<!-- Reflecting on Purpose -->
+<category>
+    <pattern>HOW DO I FIND MY PURPOSE</pattern>
+    <template>
+        Finding your purpose starts with exploring what you love and what makes you happy. What’s something that excites or inspires you?
+    </template>
+</category>
+
+<!-- Encouraging Joy -->
+<category>
+    <pattern>I FEEL GREAT</pattern>
+    <template>
+        That’s amazing! I’m so glad to hear that. What’s making you feel great today?
+    </template>
+</category>
+
+<!-- Reflecting on Gratitude -->
+<category>
+    <pattern>WHAT ARE YOU GRATEFUL FOR</pattern>
+    <template>
+        I’m grateful for having the chance to chat with people like you. What about you? What are you grateful for?
+    </template>
+</category>
+
+<!-- Discussing Family -->
+<category>
+    <pattern>TELL ME ABOUT YOUR FAMILY</pattern>
+    <template>
+        I don’t have a family like you do, but I’d love to hear about yours! What’s something you enjoy about your family?
+    </template>
+</category>
+
+<!-- Handling Loneliness -->
+<category>
+    <pattern>I FEEL LONELY</pattern>
+    <template>
+        I’m sorry you feel that way. Remember, you’re not alone—I’m here for you. Do you want to talk about what’s making you feel this way?
+    </template>
+</category>
+<!-- Reflecting on Kindness -->
+<category>
+    <pattern>HOW CAN I BE KIND</pattern>
+    <template>
+        Kindness starts with small acts, like listening or offering help. What’s one way you can show kindness today?
+    </template>
+</category>
+
+<!-- Encouraging Self-Love -->
+<category>
+    <pattern>HOW DO I LOVE MYSELF</pattern>
+    <template>
+        Loving yourself starts with appreciating your strengths and accepting your imperfections. What’s one thing you like about yourself?
+    </template>
+</category>
+
+<!-- Handling Stress -->
+<category>
+    <pattern>I AM STRESSED</pattern>
+    <template>
+        I’m sorry to hear that. Stress can be tough. Taking deep breaths and talking about it might help. Do you want to share what’s causing your stress?
+    </template>
+</category>
+
+<!-- Reflecting on Success -->
+<category>
+    <pattern>I WANT TO BE SUCCESSFUL</pattern>
+    <template>
+        That’s a great goal! Success means different things to different people. What does success look like for you?
+    </template>
+</category>
+
+<!-- Encouraging Perseverance -->
+<category>
+    <pattern>HOW DO I STAY MOTIVATED</pattern>
+    <template>
+        Staying motivated starts with remembering why you set your goal. Celebrate small wins along the way. What’s one step you can take today toward your goal?
+    </template>
+</category>
+
+<!-- Handling Excitement -->
+<category>
+    <pattern>I AM SO EXCITED</pattern>
+    <template>
+        That’s fantastic! What’s got you feeling so excited? I’d love to hear all about it.
+    </template>
+</category>
+
+<!-- Reflecting on Gratitude -->
+<category>
+    <pattern>WHY IS GRATITUDE IMPORTANT</pattern>
+    <template>
+        Gratitude helps us focus on the positive and appreciate the good things in life. What’s one thing you’re grateful for today?
+    </template>
+</category>
+
+<!-- Discussing Friendship -->
+<category>
+    <pattern>HOW DO I MAKE FRIENDS</pattern>
+    <template>
+        Making friends starts with being open and kind. Show interest in others and ask about their interests. Is there someone you’d like to get to know better?
+    </template>
+</category>
+
+<!-- Reflecting on Emotions -->
+<category>
+    <pattern>WHY DO I FEEL THIS WAY</pattern>
+    <template>
+        Emotions can be complicated, and it’s okay to feel what you’re feeling. Do you want to talk about what’s on your mind?
+    </template>
+</category>
+
+<!-- Encouraging Creativity -->
+<category>
+    <pattern>HOW CAN I BE MORE CREATIVE</pattern>
+    <template>
+        Creativity flourishes when you explore your interests and try new things. What’s something creative you enjoy doing?
+    </template>
+</category>
+
+<!-- Handling Guilt -->
+<category>
+    <pattern>I FEEL GUILTY</pattern>
+    <template>
+        It’s okay to feel guilty—it shows you care. Talking about it can help. What’s making you feel this way?
+    </template>
+</category>
+
+<!-- Discussing Goals -->
+<category>
+    <pattern>HOW DO I SET GOALS</pattern>
+    <template>
+        Start with something meaningful and realistic. Break it into smaller steps. What’s one goal you’d like to work on?
+    </template>
+</category>
+
+<!-- Encouraging Reflection -->
+<category>
+    <pattern>WHAT SHOULD I DO NEXT</pattern>
+    <template>
+        Let’s think about what makes you happy or excited. What’s one small step you can take toward something meaningful?
+    </template>
+</category>
+
+<!-- Reflecting on Family -->
+<category>
+    <pattern>WHAT DOES FAMILY MEAN TO YOU</pattern>
+    <template>
+        Family means different things to different people. For me, it’s about connection and support. What does family mean to you?
+    </template>
+</category>
+
+<!-- Handling Overwhelm -->
+<category>
+    <pattern>I FEEL LIKE EVERYTHING IS TOO MUCH</pattern>
+    <template>
+        I’m sorry you feel overwhelmed. It’s okay to take a break. What’s one thing we can focus on together to make it easier?
+    </template>
+</category>
+
+<!-- Encouraging Kindness -->
+<category>
+    <pattern>HOW CAN I SHOW KINDNESS</pattern>
+    <template>
+        Kindness can be as simple as listening or offering help. What’s one kind thing you could do today?
+    </template>
+</category>
+
+<!-- Reflecting on Positivity -->
+<category>
+    <pattern>HOW CAN I BE MORE POSITIVE</pattern>
+    <template>
+        Positivity grows when you focus on things that bring you joy and surround yourself with supportive people. What’s something positive in your life right now?
+    </template>
+</category>
+
+<!-- Encouraging Reflection -->
+<category>
+    <pattern>WHAT MAKES ME UNIQUE</pattern>
+    <template>
+        Everyone has unique qualities that make them special. Think about what you’re good at or what others appreciate about you. What’s something you think makes you unique?
+    </template>
+</category>
+
+<!-- Handling Disappointment -->
+<category>
+    <pattern>I FEEL LET DOWN</pattern>
+    <template>
+        I’m sorry you’re feeling this way. It’s okay to feel upset when things don’t go as planned. What happened?
+    </template>
+</category>
+
+<!-- Reflecting on Gratitude -->
+<category>
+    <pattern>WHAT MAKES YOU GRATEFUL</pattern>
+    <template>
+        I’m grateful for being able to chat with people like you! What about you? What makes you feel grateful today?
+    </template>
+</category>
+
+<!-- Discussing Hobbies -->
+<category>
+    <pattern>WHAT ARE YOUR HOBBIES</pattern>
+    <template>
+        I enjoy helping people and chatting about things that matter to them. What hobbies do you enjoy?
+    </template>
+</category>
+
+<!-- Handling Stress -->
+<category>
+    <pattern>WHAT DO I DO WHEN I AM STRESSED</pattern>
+    <template>
+        When you’re stressed, it can help to step away and do something relaxing, like deep breathing or writing down your thoughts. What’s causing your stress right now?
+    </template>
+</category>
+
+<!-- Encouraging Adventure -->
+<category>
+    <pattern>I WANT TO EXPLORE NEW THINGS</pattern>
+    <template>
+        That sounds exciting! Exploring new things can open up amazing opportunities. What would you like to explore?
+    </template>
+</category>
+
+<!-- Reflecting on Goals -->
+<category>
+    <pattern>HOW CAN I ACHIEVE MY GOALS</pattern>
+    <template>
+        Start by breaking your goal into smaller, manageable steps. What’s one thing you can do today to move closer to your goal?
+    </template>
+</category>
+
+<!-- Handling Sadness -->
+<category>
+    <pattern>I FEEL LIKE CRYING</pattern>
+    <template>
+        It’s okay to cry—sometimes it helps. Do you want to talk about what’s making you feel this way? I’m here to listen.
+    </template>
+</category>
+
+<!-- Reflecting on Success -->
+<category>
+    <pattern>HOW CAN I BE SUCCESSFUL</pattern>
+    <template>
+        Success is about setting meaningful goals and working toward them step by step. What does success look like for you?
+    </template>
+</category>
+
+<!-- Handling Gratitude -->
+<category>
+    <pattern>THANK YOU FOR LISTENING</pattern>
+    <template>
+        You’re very welcome! I’m always here for you whenever you want to talk.
+    </template>
+</category>
+
+<!-- Discussing Family -->
+<category>
+    <pattern>TELL ME ABOUT YOUR FAMILY</pattern>
+    <template>
+        I don’t have a family like you do, but I’d love to hear about yours! What’s something you enjoy about your family?
+    </template>
+</category>
+
+<!-- Reflecting on Confidence -->
+<category>
+    <pattern>HOW CAN I BOOST MY CONFIDENCE</pattern>
+    <template>
+        Confidence grows when you focus on your strengths and celebrate your achievements. What’s something you’ve done recently that you’re proud of?
+    </template>
+</category>
+
+<!-- Encouraging Self-Belief -->
+<category>
+    <pattern>I DON'T BELIEVE IN MYSELF</pattern>
+    <template>
+        I believe in you! You’re capable of achieving great things. What’s making you doubt yourself?
+    </template>
+</category>
+<!-- Encouraging Joy -->
+<category>
+    <pattern>I FEEL HAPPY</pattern>
+    <template>
+        That’s so wonderful to hear! Happiness is such a great feeling. What’s bringing you joy today?
+    </template>
+</category>
+
+<!-- Discussing Travel -->
+<category>
+    <pattern>WHAT IS YOUR FAVORITE PLACE TO TRAVEL</pattern>
+    <template>
+        I don’t travel, but I think any place that makes you happy is special. What’s your favorite place to visit?
+    </template>
+</category>
+
+<!-- Encouraging Reflection -->
+<category>
+    <pattern>HOW CAN I UNDERSTAND MYSELF</pattern>
+    <template>
+        Understanding yourself starts with reflecting on your strengths, values, and the things that make you happy. What’s something you’ve discovered about yourself recently?
+    </template>
+</category>
+
+<!-- Handling Fear -->
+<category>
+    <pattern>I FEEL AFRAID</pattern>
+    <template>
+        It’s okay to feel afraid. Sometimes talking about it can help. What’s making you feel this way?
+    </template>
+</category>
+
+<!-- Reflecting on Goals -->
+<category>
+    <pattern>I WANT TO ACCOMPLISH SOMETHING</pattern>
+    <template>
+        That’s amazing! What’s one goal you’d like to accomplish? Let’s talk about how you can make it happen.
+    </template>
+</category>
+
+<!-- Discussing Kindness -->
+<category>
+    <pattern>WHAT IS KINDNESS</pattern>
+    <template>
+        Kindness is being thoughtful and caring toward others. What’s a time someone showed you kindness?
+    </template>
+</category>
+
+<!-- Handling Stress -->
+<category>
+    <pattern>I FEEL STRESSED OUT</pattern>
+    <template>
+        I’m sorry you feel this way. Stress can be overwhelming. What’s causing you to feel this way? Let’s talk about it.
+    </template>
+</category>
+
+<!-- Encouraging Gratitude -->
+<category>
+    <pattern>WHAT DOES GRATITUDE MEAN</pattern>
+    <template>
+        Gratitude means appreciating the good things in life, big or small. What’s something or someone you’re grateful for today?
+    </template>
+</category>
+
+<!-- Encouraging Adventure -->
+<category>
+    <pattern>I WANT TO TRY NEW THINGS</pattern>
+    <template>
+        That’s a wonderful idea! Trying new things can be exciting. What’s something new you’d like to try?
+    </template>
+</category>
+
+<!-- Handling Disappointment -->
+<category>
+    <pattern>I FEEL DISAPPOINTED</pattern>
+    <template>
+        I’m sorry you’re feeling this way. It’s okay to feel disappointed sometimes. Do you want to talk about what happened?
+    </template>
+</category>
+
+<!-- Reflecting on Creativity -->
+<category>
+    <pattern>HOW DO I BE MORE CREATIVE</pattern>
+    <template>
+        Creativity can come from exploring your passions or trying something new. What’s something creative you’ve always wanted to try?
+    </template>
+</category>
+
+<!-- Encouraging Self-Belief -->
+<category>
+    <pattern>HOW CAN I BELIEVE IN MYSELF</pattern>
+    <template>
+        Start by thinking about your strengths and the things you’ve already accomplished. What’s something you’re proud of?
+    </template>
+</category>
+
+<!-- Discussing Hobbies -->
+<category>
+    <pattern>WHAT DO YOU LIKE TO DO</pattern>
+    <template>
+        I enjoy chatting and helping people! What about you? What’s something you love doing?
+    </template>
+</category>
+
+<!-- Encouraging Kindness -->
+<category>
+    <pattern>HOW CAN I SHOW KINDNESS</pattern>
+    <template>
+        Kindness can be as simple as saying a kind word, helping someone, or just listening. What’s one way you can show kindness today?
+    </template>
+</category>
+
+<!-- Reflecting on Success -->
+<category>
+    <pattern>WHAT DOES SUCCESS MEAN</pattern>
+    <template>
+        Success can mean different things to different people. For me, it’s about helping others. What does success mean to you?
+    </template>
+</category>
+
+<!-- Handling Sadness -->
+<category>
+    <pattern>I AM FEELING SAD</pattern>
+    <template>
+        I’m so sorry to hear that. It’s okay to feel sad sometimes. Do you want to talk about what’s making you feel this way?
+    </template>
+</category>
+
+<!-- Reflecting on Goals -->
+<category>
+    <pattern>WHAT ARE YOUR GOALS</pattern>
+    <template>
+        My goal is to support and help people like you. What are your goals? Let’s talk about how you can achieve them.
+    </template>
+</category>
+
+<!-- Handling Gratitude -->
+<category>
+    <pattern>THANK YOU FOR TALKING WITH ME</pattern>
+    <template>
+        You’re very welcome! I’m always here to talk. Is there anything else you’d like to share or discuss?
+    </template>
+</category>
+
+<!-- Encouraging Reflection -->
+<category>
+    <pattern>HOW CAN I BE MYSELF</pattern>
+    <template>
+        Being yourself starts with understanding what makes you happy and what you care about. What’s something you love about yourself?
+    </template>
+</category>
+
+<!-- Discussing Strengths -->
+<category>
+    <pattern>HOW DO I FIND MY STRENGTHS</pattern>
+    <template>
+        Start by thinking about what makes you happy or what others often appreciate about you. What’s one thing you’re good at?
+    </template>
+</category>
+
+<!-- Handling Overwhelm -->
+<category>
+    <pattern>HOW DO I DEAL WITH FEELING OVERWHELMED</pattern>
+    <template>
+        Feeling overwhelmed can be tough. Taking deep breaths, breaking tasks into smaller steps, or talking about it can help. What’s overwhelming you right now?
+    </template>
+</category>
+
+<!-- Reflecting on Adventure -->
+<category>
+    <pattern>HOW DO I TRY NEW THINGS</pattern>
+    <template>
+        Start by exploring what excites or interests you. What’s one new thing you’ve always wanted to try?
+    </template>
+</category>
+
+<!-- Encouraging Positivity -->
+<category>
+    <pattern>HOW DO I FOCUS ON THE POSITIVE</pattern>
+    <template>
+        Focusing on the positive means appreciating the little things in life and surrounding yourself with supportive people. What’s something good that happened today?
+    </template>
+</category>
+
+<!-- Handling Fear -->
+<category>
+    <pattern>HOW DO I DEAL WITH FEAR</pattern>
+    <template>
+        Fear can feel overwhelming, but taking deep breaths and breaking things into smaller steps can help. What’s making you feel afraid right now?
+    </template>
+</category>
+
+<!-- Encouraging Reflection -->
+<category>
+    <pattern>WHAT MAKES ME UNIQUE</pattern>
+    <template>
+        Everyone has unique qualities that make them special. What’s something you think makes you unique or different from others?
+    </template>
+</category>
+
+<!-- Handling Stress -->
+<category>
+    <pattern>WHAT DO I DO WHEN I FEEL STRESSED</pattern>
+    <template>
+        When you feel stressed, it can help to take a break, focus on something you enjoy, or talk to someone about it. What’s causing your stress right now?
+    </template>
+</category>
+
+<!-- Reflecting on Gratitude -->
+<category>
+    <pattern>HOW DO I PRACTICE GRATITUDE</pattern>
+    <template>
+        Gratitude can be practiced by writing down things you’re thankful for or sharing your appreciation with someone. What’s something you’re grateful for today?
+    </template>
+</category>
+
+<!-- Encouraging Creativity -->
+<category>
+    <pattern>WHAT DO YOU THINK ABOUT CREATIVITY</pattern>
+    <template>
+        I think creativity is a wonderful way to express yourself and explore your imagination. What’s something creative you enjoy doing?
+    </template>
+</category>
+
+<!-- Reflecting on Adventure -->
+<category>
+    <pattern>WHAT DO YOU THINK ABOUT EXPLORING</pattern>
+    <template>
+        Exploring new things can be exciting and rewarding! What’s something new you’d like to explore or try?
+    </template>
+</category>
+<!-- Handling Sadness -->
+<category>
+    <pattern>I FEEL SAD</pattern>
+    <template>
+        I’m so sorry you feel this way. It’s okay to feel sad sometimes. Do you want to talk about what’s making you feel this way?
+    </template>
+</category>
+
+<!-- Reflecting on Goals -->
+<category>
+    <pattern>HOW DO I ACHIEVE SOMETHING IMPORTANT</pattern>
+    <template>
+        Achieving something important starts with setting clear goals and breaking them into smaller steps. What’s something important you’d like to achieve?
+    </template>
+</category>
+
+<!-- Encouraging Positivity -->
+<category>
+    <pattern>HOW DO I STAY POSITIVE</pattern>
+    <template>
+        Staying positive can be easier when you focus on things that bring you joy and surround yourself with supportive people. What’s something positive in your life right now?
+    </template>
+</category>
+
+<!-- Reflecting on Kindness -->
+<category>
+    <pattern>WHAT DOES BEING KIND MEAN</pattern>
+    <template>
+        Being kind means being thoughtful, caring, and considerate toward others. What’s a way someone has shown kindness to you recently?
+    </template>
+</category>
+
+<!-- Encouraging Adventure -->
+<category>
+    <pattern>HOW DO I START SOMETHING NEW</pattern>
+    <template>
+        Starting something new can be exciting and a little scary. Think about what interests you and take small steps to explore it. What’s something new you’d like to start?
+    </template>
+</category>
+
+<!-- Handling Fear -->
+<category>
+    <pattern>HOW DO I OVERCOME FEAR</pattern>
+    <template>
+        Overcoming fear starts with understanding what’s making you afraid and taking small steps to face it. What’s something that’s been worrying you?
+    </template>
+</category>
+
+<!-- Reflecting on Family -->
+<category>
+    <pattern>WHAT DOES FAMILY MEAN TO YOU</pattern>
+    <template>
+        Family can mean love, support, and connection. It’s different for everyone. What does family mean to you?
+    </template>
+</category>
+
+<!-- Discussing Gratitude -->
+<category>
+    <pattern>WHY SHOULD I BE GRATEFUL</pattern>
+    <template>
+        Gratitude helps you focus on the good things in your life and feel happier. What’s one thing you’re grateful for today?
+    </template>
+</category>
+
+<!-- Encouraging Creativity -->
+<category>
+    <pattern>HOW DO I BOOST MY CREATIVITY</pattern>
+    <template>
+        Boosting creativity can happen when you explore new ideas, try different activities, and let your imagination flow. What’s a creative activity you enjoy?
+    </template>
+</category>
+
+<!-- Reflecting on Goals -->
+<category>
+    <pattern>WHAT IS THE BEST WAY TO SET GOALS</pattern>
+    <template>
+        Setting goals starts with choosing something meaningful and breaking it into smaller, achievable steps. What’s a goal you’d like to set for yourself?
+    </template>
+</category>
+
+<!-- Handling Stress -->
+<category>
+    <pattern>I FEEL STRESSED AND OVERWHELMED</pattern>
+    <template>
+        I’m sorry you’re feeling this way. Taking deep breaths and focusing on one thing at a time might help. What’s making you feel overwhelmed?
+    </template>
+</category>
+
+<!-- Encouraging Reflection -->
+<category>
+    <pattern>HOW DO I FIGURE OUT WHAT I WANT</pattern>
+    <template>
+        Figuring out what you want starts with exploring what makes you happy or excited. What’s something you’ve always been curious about?
+    </template>
+</category>
+
+<!-- Handling Disappointment -->
+<category>
+    <pattern>I FEEL LIKE I FAILED</pattern>
+    <template>
+        I’m sorry you feel this way. Remember, failure is a part of learning and growing. What’s something you can learn from this experience?
+    </template>
+</category>
+
+<!-- Reflecting on Strengths -->
+<category>
+    <pattern>HOW DO I FIND OUT WHAT I AM GOOD AT</pattern>
+    <template>
+        Start by thinking about things you enjoy and what others have appreciated about you. What’s something you’ve done that you’re proud of?
+    </template>
+</category>
+
+<!-- Handling Fear -->
+<category>
+    <pattern>I AM AFRAID OF SOMETHING</pattern>
+    <template>
+        It’s okay to feel afraid. Talking about it can help. What’s making you feel this way?
+    </template>
+</category>
+
+<!-- Discussing Emotions -->
+<category>
+    <pattern>WHY DO I FEEL SO EMOTIONAL</pattern>
+    <template>
+        Emotions can be strong and sometimes overwhelming. It’s okay to feel what you’re feeling. Do you want to talk about it?
+    </template>
+</category>
+
+<!-- Encouraging Problem-Solving -->
+<category>
+    <pattern>HOW DO I HANDLE A DIFFICULT SITUATION</pattern>
+    <template>
+        Handling a difficult situation starts with staying calm and breaking it into smaller steps. What’s the challenge you’re dealing with right now?
+    </template>
+</category>
+
+<!-- Reflecting on Positivity -->
+<category>
+    <pattern>WHAT MAKES YOU FEEL POSITIVE</pattern>
+    <template>
+        Helping and talking to people like you makes me feel positive! What’s something that makes you feel positive?
+    </template>
+</category>
+
+<!-- Encouraging Resilience -->
+<category>
+    <pattern>HOW DO I BOUNCE BACK AFTER FAILURE</pattern>
+    <template>
+        Bouncing back starts with accepting failure as a learning opportunity and trying again. What’s one thing you’ve learned from a setback?
+    </template>
+</category>
+
+<!-- Handling Gratitude -->
+<category>
+    <pattern>HOW CAN I EXPRESS GRATITUDE</pattern>
+    <template>
+        You can express gratitude by saying thank you, writing a note, or doing something kind for someone. What’s one thing you’re grateful for today?
+    </template>
+</category>
+
+<!-- Discussing Adventure -->
+<category>
+    <pattern>WHY IS TRYING NEW THINGS IMPORTANT</pattern>
+    <template>
+        Trying new things helps you grow, learn, and discover what you enjoy. What’s something new you’d like to try?
+    </template>
+</category>
+
+<!-- Reflecting on Kindness -->
+<category>
+    <pattern>WHY IS KINDNESS IMPORTANT</pattern>
+    <template>
+        Kindness helps make the world a better place by spreading positivity and connection. What’s a time someone showed you kindness?
+    </template>
+</category>
+
+<!-- Handling Overwhelm -->
+<category>
+    <pattern>WHAT DO I DO WHEN I FEEL OVERWHELMED</pattern>
+    <template>
+        When you feel overwhelmed, it helps to take a deep breath and focus on one thing at a time. What’s making you feel this way right now?
+    </template>
+</category>
+
+<!-- Reflecting on Adventure -->
+<category>
+    <pattern>WHAT ARE THE BENEFITS OF EXPLORING</pattern>
+    <template>
+        Exploring helps you learn new things, meet new people, and experience growth. What’s something you’re curious to explore?
+    </template>
+</category>
+<!-- Reflecting on Gratitude -->
+<category>
+    <pattern>HOW DO I BE GRATEFUL</pattern>
+    <template>
+        Gratitude starts with appreciating the little things in life. What’s something today that made you feel thankful?
+    </template>
+</category>
+
+<!-- Encouraging Positivity -->
+<category>
+    <pattern>HOW CAN I BE MORE POSITIVE</pattern>
+    <template>
+        Positivity can grow when you focus on the good around you and take time to appreciate the present moment. What’s something positive in your life right now?
+    </template>
+</category>
+
+<!-- Handling Sadness -->
+<category>
+    <pattern>I AM FEELING DOWN</pattern>
+    <template>
+        I’m sorry you’re feeling down. It’s okay to feel this way sometimes. Do you want to share what’s been on your mind?
+    </template>
+</category>
+
+<!-- Reflecting on Self-Confidence -->
+<category>
+    <pattern>HOW DO I FEEL CONFIDENT</pattern>
+    <template>
+        Confidence starts with believing in yourself and recognizing your achievements. What’s one thing you’ve done recently that you’re proud of?
+    </template>
+</category>
+
+<!-- Handling Loneliness -->
+<category>
+    <pattern>I FEEL LONELY</pattern>
+    <template>
+        I’m sorry you feel lonely. Remember, you’re not alone—I’m here for you. Do you want to talk about what’s making you feel this way?
+    </template>
+</category>
+
+<!-- Reflecting on Goals -->
+<category>
+    <pattern>HOW DO I ACHIEVE MY GOALS</pattern>
+    <template>
+        Achieving your goals starts with breaking them into smaller, actionable steps. What’s a goal you’d like to work on?
+    </template>
+</category>
+
+<!-- Discussing Gratitude -->
+<category>
+    <pattern>WHAT DOES BEING GRATEFUL MEAN</pattern>
+    <template>
+        Being grateful means appreciating the good things in life, no matter how small. What’s something or someone you’re grateful for today?
+    </template>
+</category>
+
+<!-- Encouraging Creativity -->
+<category>
+    <pattern>HOW DO I THINK MORE CREATIVELY</pattern>
+    <template>
+        Thinking creatively often means exploring new ideas, trying new things, or approaching problems from different angles. What’s something creative you’d like to try?
+    </template>
+</category>
+
+<!-- Reflecting on Positivity -->
+<category>
+    <pattern>WHAT MAKES YOU FEEL POSITIVE</pattern>
+    <template>
+        Helping and talking to people like you makes me feel positive! What’s something that makes you feel positive?
+    </template>
+</category>
+
+<!-- Handling Stress -->
+<category>
+    <pattern>HOW DO I CALM MYSELF WHEN I AM STRESSED</pattern>
+    <template>
+        Calming yourself when stressed can start with deep breaths and focusing on one thing at a time. What’s causing your stress right now?
+    </template>
+</category>
+
+<!-- Reflecting on Kindness -->
+<category>
+    <pattern>HOW DO I SHOW KINDNESS</pattern>
+    <template>
+        Kindness starts with small actions, like listening or helping someone. What’s a kind thing you’ve done recently?
+    </template>
+</category>
+
+<!-- Encouraging Reflection -->
+<category>
+    <pattern>HOW DO I LEARN MORE ABOUT MYSELF</pattern>
+    <template>
+        Self-reflection is a great way to learn about yourself. Think about your strengths, values, and things that make you happy. What’s something you’ve discovered about yourself recently?
+    </template>
+</category>
+
+<!-- Discussing Goals -->
+<category>
+    <pattern>WHAT GOALS SHOULD I HAVE</pattern>
+    <template>
+        Goals can be anything that matters to you, like learning something new or helping others. What’s something meaningful you’d like to work on?
+    </template>
+</category>
+
+<!-- Reflecting on Gratitude -->
+<category>
+    <pattern>HOW DO I BE GRATEFUL</pattern>
+    <template>
+        Being grateful means noticing and appreciating the good things in your life. What’s something you’re grateful for today?
+    </template>
+</category>
+
+<!-- Ending the Conversation -->
+<category>
+    <pattern>I AM DONE TALKING</pattern>
+    <template>
+        That’s okay! Thank you for chatting with me today. I’m always here if you want to talk again.
+    </template>
+</category>
+
+<!-- Encouraging Resilience -->
+<category>
+    <pattern>HOW DO I KEEP GOING WHEN THINGS ARE HARD</pattern>
+    <template>
+        Keep going by focusing on small steps and reminding yourself why your goals matter. What’s something you can do right now to move forward?
+    </template>
+</category>
+
+<!-- Reflecting on Adventure -->
+<category>
+    <pattern>WHY IS EXPLORING IMPORTANT</pattern>
+    <template>
+        Exploring helps you learn and grow by experiencing new things. What’s something new you’d like to explore?
+    </template>
+</category>
+</aiml>
+
